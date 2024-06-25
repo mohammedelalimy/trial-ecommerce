@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Open Sans' , 'sans-serif';
+  font-family: 'Roboto' , 'sans-serif';
   margin: 0;
 }
 *:focus{
@@ -372,7 +372,7 @@ i{
   }
 }
 .tit{
-  width: 260px;
+  width: 280px;
   margin: 10px 100px;
 }
 @media (max-width:768px){
@@ -546,11 +546,11 @@ i{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  -moz-transition: max-height 0.9s ease-out ;
-  -ms-transition: max-height 0.9s ease-out ;
-  -o-transition: max-height 0.9s ease-out ;
-  -webkit-transition: max-height 0.9s ease-out ;
-  transition: max-height 0.9s ease-out ;
+  -moz-transition: 0.3s ease-in ;
+  -ms-transition: 0.3s ease-in ;
+  -o-transition: 0.3s ease-in ;
+  -webkit-transition: 0.3s ease-in ;
+  transition: 0.3s ease-in ;
 }
 .prod .container-p .pp1::before{
   content: 'sale';
@@ -702,7 +702,6 @@ i{
 .prod .container-p .pp8:hover,
 .prod .container-p .pp9:hover,
 .prod .container-p .pp10:hover{
-  max-height: 500px;
   border: 2px solid green;
 }
 .prod .container-p .pp1:hover button,
@@ -715,7 +714,7 @@ i{
 .prod .container-p .pp8:hover button,
 .prod .container-p .pp9:hover button,
 .prod .container-p .pp10:hover button{
-  display: block;
+  display: unset;
 }
 .sep-ad .container-sep{
   width: 85%;
@@ -782,15 +781,156 @@ i{
   width: 240px;
   display: flex;
   flex-flow:column;
-  flex-wrap: wrap;
-  gap: 20px;
   position: relative;
-  align-items: center;
-  justify-content: space-evenly;
+  gap: 20px;
   border: 1px solid rgb(237, 234, 234);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+  font-size: 15px;
 }
+
+.special .container-spe .pp1::before {
+  content: '25%';
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 1px 3px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 255, 0.68);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.special .container-spe .pp2::before {
+  content: 'Buy 1 Get $4.00 Off';
+  color: red;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 1px 3px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.special .container-spe .pp3::before {
+  content: '22%';
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 1px 3px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 255, 0.68);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.special .container-spe .pp4::before {
+  content: '16%';
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 1px 3px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 255, 0.68);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.special .container-spe .pp1 .price .sepb1,
+.special .container-spe .pp2 .price .sepb1,
+.special .container-spe .pp3 .price .sepb1,
+.special .container-spe .pp4 .price .sepb1,
+.special .container-spe .pp5 .price .sepb1{
+  width: 90%;
+  text-align: center;
+}
+.special .container-spe .pp1 .rate i,
+.special .container-spe .pp2 .rate i,
+.special .container-spe .pp3 .rate i,
+.special .container-spe .pp4 .rate i,
+.special .container-spe .pp5 .rate i{
+  color:gold;
+  font-size: 13px;
+}
+.special .container-spe .pp1 .rate .sepb2,
+.special .container-spe .pp2 .rate .sepb2,
+.special .container-spe .pp3 .rate .sepb2,
+.special .container-spe .pp4 .rate .sepb2,
+.special .container-spe .pp5 .rate .sepb2{
+  color: #11af02;
+}
+.special .container-spe .pp1 .name,
+.special .container-spe .pp2 .name,
+.special .container-spe .pp3 .name,
+.special .container-spe .pp4 .name,
+.special .container-spe .pp5 .name{
+  text-align: center;
+}
+.special .container-spe .pp1 .rate,
+.special .container-spe .pp2 .rate,
+.special .container-spe .pp3 .rate,
+.special .container-spe .pp4 .rate,
+.special .container-spe .pp5 .rate {
+  text-align: center;
+}
+.special .container-spe .pp1 button ,
+.special .container-spe .pp2 button ,
+.special .container-spe .pp3 button ,
+.special .container-spe .pp4 button ,
+.special .container-spe .pp5 button {
+  border: none;
+  background-color: #11af02;
+  color: #fff;
+  padding: 10px;
+  width: 180px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+.special .container-spe .pp1 .cart,
+.special .container-spe .pp2 .cart,
+.special .container-spe .pp3 .cart,
+.special .container-spe .pp4 .cart,
+.special .container-spe .pp5 .cart{
+  text-align: center;
+  display: none;
+}
+.special .container-spe .pp1:hover .cart,
+.special .container-spe .pp2:hover .cart,
+.special .container-spe .pp3:hover .cart,
+.special .container-spe .pp4:hover .cart,
+.special .container-spe .pp5:hover .cart{
+  display: block;
+}
+.addition , .addition1 , 
+.addition2, .addition3 , 
+.addition4 {
+  height: 8px;
+  width: 80%;
+  margin: auto;
+  background-color: #767474;
+  background-size: 75%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
